@@ -54,13 +54,13 @@ tasks.withType(Test) {
     }
 }
 
-task positive_tests(type: Test) {
+task userLogin(type: Test) {
     useJUnitPlatform {
         includeTags "login"
     }
 }
 
-task negative_tests(type: Test) {
+task passRecovery(type: Test) {
     useJUnitPlatform {
         includeTags "recovery"
     }
